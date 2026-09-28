@@ -5,7 +5,17 @@ A machine learning project that predicts the selling price of used cars using a 
 The project provides a FastAPI REST API for predictions and a Streamlit web interface for user-friendly interaction.
 
 ---
+## 🔗 Live Demo
 
+| Component | Link |
+|-----------|------|
+| 🖥️ Streamlit App | https://carpricepredictionapi-nveywf4w8c9woudaooyh97.streamlit.app/ |
+| ⚙️ FastAPI Backend (Render) | https://car-price-prediction-api-9wpe.onrender.com |
+| 📄 API Docs (Swagger) | https://car-price-prediction-api-9wpe.onrender.com/docs |
+
+- ⏳ The backend runs on Render's free tier, so the first request after inactivity can take 30–60 seconds while it wakes up.
+
+--- 
 ## 📌 Features
 
 - Used-car price prediction using Machine Learning
