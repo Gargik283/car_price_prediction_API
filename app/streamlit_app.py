@@ -2,8 +2,6 @@ import streamlit as st
 import requests
 import os
 
-API_URL = os.getenv("API_URL", "http://127.0.0.1:8000/predict")
-
 # ---------------------------------------------------------
 # Page configuration
 # ---------------------------------------------------------
@@ -30,8 +28,7 @@ st.write(
 # API URL
 # ---------------------------------------------------------
 
-API_URL = "http://127.0.0.1:8000/predict"
-
+API_URL = os.getenv("API_URL", "http://127.0.0.1:8000/predict")
 
 # ---------------------------------------------------------
 # Input fields
@@ -179,7 +176,7 @@ if st.button(
         response = requests.post(
             API_URL,
             json=data,
-            timeout=10
+            timeout=60
         )
 
 
